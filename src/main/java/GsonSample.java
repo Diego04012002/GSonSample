@@ -13,30 +13,30 @@ public class GsonSample {
 		int intentos = 0;
 
 		System.out.println("Introduce tu nombre:");
-		p.Nombre = teclado.nextLine();
+		p.setNombre(teclado.nextLine());
 
 		while (p.contieneSoloLetras(p.getNombre()) == false || p.getNombre().length() == 0) {
 			System.out.println("Introduce algo coherente:");
-			p.Nombre = teclado.nextLine();
+			p.setNombre(teclado.nextLine());
 		}
 
 		System.out.println("Introduce tus apellidos:");
-		p.Apellidos = teclado.nextLine();
+		p.setApellidos(teclado.nextLine());
 
 		while (p.contieneSoloLetras(p.getApellidos()) == false || p.getApellidos().length() == 0) {
 			System.out.println("Introduce algo coherente:");
-			p.Apellidos = teclado.nextLine();
+			p.setApellidos(teclado.nextLine());
 		}
 
 		while (exc1 == exc) {
 			try {
 				if (intentos == 0) {
 					System.out.println("Introduce tu edad:");
-					p.Edad = teclado.nextInt();
+					p.setEdad(teclado.nextInt());
 					exc = 1;
 				} else {
 					System.out.println("Introduce algo coherente:");
-					p.Edad = teclado.nextInt();
+					p.setEdad(teclado.nextInt());
 					exc = 1;
 				}
 			} catch (InputMismatchException exception) {

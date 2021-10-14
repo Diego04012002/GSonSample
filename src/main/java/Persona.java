@@ -1,17 +1,17 @@
 
 public class Persona {
 
-	public String Nombre;
-	public String Apellidos;
-	public int Edad;
+	private String nombre;
+	private String apellidos;
+	private int edad;
 
 	public Persona() {
 	}
 	
 	public Persona(String Nombre, String Apellidos, int Edad) {
-		this.Apellidos = Apellidos;
-		this.Nombre = Nombre;
-		this.Edad = Edad;
+		this.apellidos = Apellidos;
+		this.nombre = Nombre;
+		this.edad = Edad;
 	}
 	
 	public boolean contieneSoloLetras(String numeroTexto) {
@@ -25,14 +25,28 @@ public class Persona {
 	}
 
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 
 	public String getApellidos() {
-		return Apellidos;
+		return apellidos;
 	}
 
 	public int getEdad() {
-		return Edad;
+		return edad;
 	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	
+	
 }
